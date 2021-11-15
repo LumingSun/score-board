@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+   <body>
+
+      <table border = 1>
+         <tr>
+            <th>提交记录</th>
+            <th>MSLE</th>
+         </tr>
+         {% for key, value in results.items() %}
+
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+
+         {% endfor %}
+      </table>
+      <p>注意：评测结果使用<a href="https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error">MSLE</a>，评测分数越小代表结果越好。</p>
+   </body>
+</html>

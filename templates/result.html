@@ -1,0 +1,9 @@
+<html>
+    <body>
+         <p>结果提交成功！</p>
+         <p>您的测评得分为 {{score}}</p>
+         <p>注意：评测结果使用<a href="https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error">MSLE</a>，评测分数越小代表结果越好。</p>
+         <p><button type="button" onclick="window.location.href='{{ url_for('board')}}';">查看排名</button></p>
+         <p><button type="button" onclick="window.location.href='{{ url_for('main_page')}}';">返回首页</button></p>
+    </body>
+</html>

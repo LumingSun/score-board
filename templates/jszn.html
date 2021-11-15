@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <p>机器学习与计算智能作业2提交</p>
+        <p>请按照格式要求提交结果文件，尽量以学号等有区分度方式命名csv文件。</p>
+        <form method="post" action="{{ url_for('result') }}" enctype = "multipart/form-data">
+            <p><input type="file" name="input_file" /></p>
+            <p><input type="submit" value="Upload" /></p>
+        </form>
+        <p><button type="button" onclick="window.location.href='{{ url_for('board')}}';">查看排名</button></p>
+    </body>
+</html>
